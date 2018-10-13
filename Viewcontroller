@@ -1,0 +1,15 @@
+
+Import webkit
+
+
+
+
+
+let webView = WKWebView()
+        webView.frame  = CGRect(x: 0, y: 0, width: self.view.bounds.width, height:  self.view.bounds.height)
+        self.view.addSubview(webView)
+        webView.scrollView.isScrollEnabled = true
+        
+        let urlString = "dfdsfdsfdsfdsfdsf.html"
+        let request = URLRequest(url: URL(string: urlString)!)
+        webView.load(request)
